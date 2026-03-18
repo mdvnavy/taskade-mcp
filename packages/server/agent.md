@@ -1,6 +1,6 @@
 # Taskade MCP Agent Playbook (OpenClaw)
 
-This file guides an OpenClaw agent that is allowed to use the Taskade MCP server. Pair it with `skill.md` for tool-by-tool details and guardrails.
+This file guides an OpenClaw agent that is allowed to use the Taskade MCP server. Pair it with [skill.md](./skill.md) for tool-by-tool details and guardrails.
 
 ## Connection
 - Use the MCP server command: `npx -y @taskade/mcp-server` with env `TASKADE_API_KEY=<personal access token>`.
@@ -26,4 +26,3 @@ This file guides an OpenClaw agent that is allowed to use the Taskade MCP server
 ## Error Handling
 - If a tool fails, surface the HTTP status/message, restate what was attempted, and propose the next safest step (usually re-list to verify current state).
 - When pagination exists, request the next page only if needed for the user’s goal.
-

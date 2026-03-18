@@ -1,6 +1,6 @@
 # OpenClaw Agent Playbook for `@taskade/mcp-openapi-codegen`
 
-Use this when an OpenClaw agent needs to turn any OpenAPI 3.0+ spec into MCP tools for downstream servers.
+Use this when an OpenClaw agent needs to turn any OpenAPI 3.0+ spec into MCP tools for downstream servers. Pair it with [skill.md](./skill.md) for the codegen options.
 
 ## Purpose
 - Generate MCP tool definitions from an OpenAPI document so OpenClaw can call external APIs safely.
@@ -21,4 +21,3 @@ Use this when an OpenClaw agent needs to turn any OpenAPI 3.0+ spec into MCP too
 2) Run the generator script to produce `tools.generated.ts` (or a user-chosen path).
 3) Wire `setupTools` into the MCP server and confirm tool names with the user.
 4) Hand off to downstream skill guidance in `skill.md` for options and normalization patterns.
-
