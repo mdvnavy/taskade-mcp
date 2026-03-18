@@ -69,6 +69,15 @@ The server starts at `http://localhost:3000` (configure with `PORT` env var). Co
 
 ---
 
+## Agent Playbooks (OpenClaw)
+
+- Taskade MCP server agent instructions: [packages/server/agent.md](packages/server/agent.md) → tool-by-tool guidance in [packages/server/skill.md](packages/server/skill.md).
+- OpenAPI codegen agent instructions: [packages/openapi-codegen/agent.md](packages/openapi-codegen/agent.md) → generation options in [packages/openapi-codegen/skill.md](packages/openapi-codegen/skill.md).
+
+Use these prompts as drop-in guidance for OpenClaw agents to operate Taskade safely and to generate custom MCP toolsets from other OpenAPI specs.
+
+---
+
 ## Tools (50+)
 
 ### Workspaces
